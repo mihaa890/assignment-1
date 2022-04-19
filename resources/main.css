@@ -92,7 +92,9 @@ button {
     background-color: transparent;
     background-repeat: no-repeat;
     cursor: pointer;
+    /* nu am inteles de ce aveai nevoie de overflow aici */
     overflow: hidden;
+    /* nu am inteles foarte bine aceasta decizie de implementare, pe langa faptul ca impreuna cu margin-urile de 150px setate mai jos iti aliniaza butonul mult la dreapta decat era specificat in layout, este o pozitionare manuala pe care nu o recomand si nu ai nevoie, te pozi baza pe tehnici de layout si separat pe stilizare pt button */
     width: 200px;
     height: 40px;
     color: white;
@@ -100,6 +102,7 @@ button {
     border-radius: 15px;
     margin-left: 150px;
     margin-top: 150px;
+    /* iti recomand sa folosesti reguli de acest tip pe un element parinte, este redundant sa il pui separat pe elemente, daca va trebui modificat ca o decizi de design de exemplu, va trebui sa modifici in toate locurile separat, decat intr-un singur loc */
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 18px;
