@@ -72,17 +72,15 @@ button {
     border-radius: 15px;
     margin-left: 100px;
     margin-top: 150px;
+    /* iti recomand sa folosesti reguli de acest tip pe un element parinte, este redundant sa il pui separat pe elemente, daca va trebui modificat ca o decizi de design de exemplu, va trebui sa modifici in toate locurile separat, decat intr-un singur loc */
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 18px;
 }
-
 nav>a:hover {
     color: #ecc42a;
 }
-
 .login-button:hover {
     background-color: white;
     color: #330379;
-
 }
