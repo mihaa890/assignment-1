@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Frontend development course">
+    <meta name="keywords" content="HTML,CSS,Learning">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/bundles/fontawesome-free-6.1.1-web/css/all.css">
+    <link href="../resources/contact.css" rel="stylesheet" type="text/css">
+    <link href="../resources/header.css" rel="stylesheet" type="text/css">
+    <title>Landing Page</title>
+    <script>
+        $(function () {
+            $("#header").load("./header.html");
+        });
+    </script>
+</head>
+
+<body>
+    <main>
+        <div id="header"></div>
+        <div class="wrapper">
+            <div class="upper-section">
+                <img src="../assets/logo-white.png" alt="logo" class="logo">
+                <h1>Contact Us</h1>
+                <div class="horizontal-divider"></div>
+                <span class="form-description">Fill out the form below to learn more</span>
+            </div>
+            <div class="lower-section">
+                <form>
+                    <div class="input-wrapper">
+                        <span>First name</span>
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" name="name" placeholder="Enter your first name" required>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <span>Last name</span>
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" name="name" placeholder="Enter your last name" required>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <span>Email</span>
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="text" name="name" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="input-wrapper">
+                        <span>Message</span>
+                        <textarea name="message" required></textarea>
+                    </div>
+                    <div class="contact-wrapper">
+                        <span class="contact-info">Contact me by: </span>
+                        <div class="contact-options">
+                            <div class="email-option">
+                                <input type="checkbox" id="email" name="email" value="Email">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="sms-option">
+                                <input type="checkbox" id="sms" name="sms" value="SMS">
+                                <label for="sms">SMS</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="submit-button" type="submit">Submit</button>
+                        <div class="submit-info">
+                            <span>or press </span> <a href="#submit" class="link">enter</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-section">
+                <h1>Geometric</h1>
+                <h2>Technology</h2>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

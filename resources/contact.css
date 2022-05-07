@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+main {
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    box-sizing: border-box;
+}
+.horizontal-divider {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+input[type="checkbox"]{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-appearance: none;
+}
+input[type=checkbox]:checked {
+    background-image: url("../assets/check.png");
+}
+input[type=checkbox]:not(:checked) {
+    background-image: url("../assets/empty-check-box.png");
+}
+
+
+.wrapper{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: 300;
+    line-height: 18px;
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin-left: 100px;
+}
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.input-wrapper span{
+    padding: 8px 0px;
+}
+.input-wrapper .input-field{
+    display: flex;
+    align-items: center;
+    border:1px solid rgb(209, 209, 209);
+    padding: 6px 6px;
+    width: 100%;
+}
+.input-wrapper .input-field input{
+    border:none;
+    width: 100%;
+    padding: 6px 2px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.input-wrapper .input-field input::-webkit-input-placeholder{
+    color: #a830c6;
+    font-size: 16px;
+    font-weight: 300;
+}
+.input-wrapper textarea{
+    width: 100%;
+    height: 100px;
+    border:1px solid rgb(209, 209, 209);
+    resize: none;
+    font-size: 16px;
+}
+.input-wrapper textarea:focus, .input-field input:focus{
+    outline: none;
+}
+
+.input-wrapper .input-field i{
+    font-size: 20px;
+    margin-right: 4px;
+    margin-bottom:4.5px;
+    color:rgb(186, 185, 185);
+}
+.wrapper .upper-section {
+    padding: 30px 0;
+}
+.wrapper .upper-section .logo{
+    position: absolute;
+    top:15px;
+    left:100px;
+    max-width: 100px;
+}
+.wrapper .upper-section .form-description {
+    font-size: 20px;
+    color:white;
+    margin-left:100px;
+}
+.wrapper .upper-section .horizontal-divider{
+    max-width: 30%;
+    height: 2px;
+    background-color: #e8c128;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    
+}
+.wrapper .lower-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    padding:20px 0;
+}
+.wrapper .lower-section form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 30%;
+}
+.wrapper .lower-section .horizontal-divider{
+    background-color: #5b158d;
+    height: 1px;
+    width: 100%;
+    margin:10px 10px;
+}
+.wrapper .lower-section .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.wrapper .lower-section .contact-wrapper .contact-info{
+    display: flex;
+    font-size: 15px;
+}
+
+.wrapper .lower-section .contact-wrapper .contact-options{
+    padding: 10px 0;
+}
+.wrapper .lower-section .contact-wrapper .contact-options .email-option , .sms-option{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.wrapper .lower-section .button-wrapper{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.wrapper .lower-section .button-wrapper .submit-button{
+    background-color: #5b158d;
+    border:none;
+    color:white;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.wrapper .lower-section .button-wrapper .submit-info a{
+    font-weight: 600;
+}
+.wrapper .lower-section .button-wrapper .submit-info span, a{
+    color:#5b158d;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:20px 0;
+
+}
+footer .footer-section h1,h2{
+    width: 100%;
+    margin:auto 0;
+    text-transform: uppercase;
+}
+
+footer .footer-section h1{
+    font-size: 18px;
+    font-weight: 300;
+    color:#5b158d;
+}
+footer .footer-section h2{
+    font-size: 14px;
+    font-weight: 300;
+    color: #ecc52d;
+}
